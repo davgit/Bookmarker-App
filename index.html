@@ -1,0 +1,35 @@
+<!DOCTYPE html" <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload='fetchBookmarks()'>
+    <div class="row">
+        <h1>Bookmarks</h1>
+        <p>Fill in your favorite websites.</p>
+        <form id="myForm">
+            <div class="form-group">
+                <input type="text" class="form-control" id="siteName" placeholder="Website name" autofocus="autofocus"
+                    autocomplete="off">
+            </div>
+            <div class="form-group">
+                <input type="url" class="form-control" id="siteURL" placeholder="Website URL" autocomplete="off">
+            </div>
+            <div class="submit">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="bookmarksResults"></div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
